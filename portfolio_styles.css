@@ -23,6 +23,15 @@ html::-webkit-scrollbar-track {
 body {
     background-color: rgb(222, 222, 222);
 }
+.wrapper {
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+}
+.para {
+    transform: translateZ(-2px) scale(1.1);
+}
 h1 {
     font-size: 12vw;
     letter-spacing: 0.5em;
@@ -49,9 +58,9 @@ p {
     display: flex;
 }
 .navbar02 {
-    margin-top: 50px;
-    padding-left: 10vw;
-    padding-right: 10vw;
+    margin-top: 10vw;
+    padding-left: 15vw;
+    padding-right: 15vw;
     display: flex;
     align-items: stretch;
     justify-content: space-between;
@@ -73,7 +82,7 @@ p {
     letter-spacing: 0.2em;
 }
 .nav-item03 {
-    margin-left: 8vw;
+    margin-left: 11vw;
     font-family: 'Roboto Mono', sans-serif;
     font-size: 1em;
     font-weight: 900;
@@ -83,7 +92,7 @@ p {
 .bust {
     position: absolute;
     top: 35vh;
-    right: 5vw;
+    right: 0vw;
     width: 40%;
     z-index: 1;
 }
@@ -99,10 +108,26 @@ p {
     margin-bottom: 10px;
     width: 100px;
 }
+.arrow02 {
+    width: 100px;
+    margin-left: 10vw;
+    margin-top: -40px;
+    margin-bottom: 10px;
+}
 .arrow03 {
     margin-top: 5px;
     margin-bottom: 10px;
     width: 62px;
+}
+.arrow04 {
+    margin-bottom: 10px;
+    width: 10px;
+    margin-left: 15vw;
+}
+#bd-arrow01{
+    margin-bottom: 10px;
+    width: 10px;
+    margin-left: -20%;
 }
 .spread {
     overflow: hidden;
@@ -119,12 +144,6 @@ p {
 .spread:hover img{
     transform: scale(1.5);
     transition: transform 30s;
-}
-.arrow02 {
-    width: 100px;
-    margin-left: 10vw;
-    margin-top: -40px;
-    margin-bottom: 10px;
 }
 .project-title {
     float: right;
@@ -146,14 +165,20 @@ p {
     left: 0;
     bottom: -10px;
 }
-
-#hand-one {
+.hand-one {
     max-width: 30%;
-    height: 100%;
     margin-left: 5vw;
+    display: inline block;
+}
+.hand-two {
+    width: 30%;
+    margin-right: 5vw;
+    display: inline-block;
 }
 .blurb {
     text-align: center;
+    margin-left: 10vw;
+    margin-right: 10vw;
 }
 .divider {
     height: 400px;
@@ -162,28 +187,124 @@ p {
     height: 200px;
 }
 .textbox01 {
-    margin: 10vw;
-    max-width: 300px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    max-width: 350px;
+    display: inline-block;
 }
-#hand-two {
-    width: 30%;
-    height: 100%;
-    margin-right: 5vw;
-}
-.flex-row02 {
+.textbox02 {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
+    justify-content:flex-end;
+    max-width: 400px;
 }
 .bold {
     font-weight: 900;
 }
-.textbox02 {
-    max-width: 400px;
-    margin-top: 10vw;
-}
-#coffin02 {
+.header-img01 {
     margin-left: 20vw;
     margin-right: 3vw;
     margin-bottom: 10px;
     max-width: 500px;
+    position: relative;
+}
+.center-wrapper {
+    margin: auto;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.grid-item {
+    background-color: #cda5a5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mosaic {
+    display: grid;
+    max-width: 70%;
+    grid-gap: 10px;
+}
+
+.bd-grid01 {
+    /* grid-auto-rows: minmax(auto, 100px); */
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-areas:
+        "bd01 bd01 bd01 bd01 bd01 .    .    .    .    ."
+        "bd01 bd01 bd01 bd01 bd01 .    .    .    .    ."
+        "bd01 bd01 bd01 bd01 bd01 .    .    .    .    ."
+        "bd01 bd01 bd01 bd01 bd01 bdin bdin bdin bdin ."
+        "bd01 bd01 bd01 bd01 bd01 bdin bdin bdin bdin ."
+        "bd02 bd02 bd02 bd02 bd02 .    .    .    .    ."
+        "bd02 bd02 bd02 bd02 bd02 .    .    .    .    ."
+        "bd02 bd02 bd02 bd02 bd02 .    .    .    .    ."
+        "bd02 bd02 bd02 bd02 bd02 bdch bdch bdch bdch ."
+        "bd02 bd02 bd02 bd02 bd02 bdch bdch bdch bdch ."
+}
+.bd01 {
+    grid-area: bd01;
+}
+.bd-intro {
+    grid-area: bdin;
+    margin-left: 2vw;
+}
+.bd02 {
+    grid-area: bd02;
+}
+.bd-challenge {
+    grid-area: bdch;
+    margin-left: 2vw;
+}
+.bd-grid02 {
+    /* grid-auto-rows: minmax(auto, 100px); */
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-areas:
+        "bd05 bd05 bd05 bd05 bd05 bd05 .    .    .    .   "
+        "bd05 bd05 bd05 bd05 bd05 bd05 .    .    .    .   "
+        "bd05 bd05 bd05 bd05 bd05 bd05 bd03 bd03 bd03 bd03"
+        "bd05 bd05 bd05 bd05 bd05 bd05 bd03 bd03 bd03 bd03"
+        "bd05 bd05 bd05 bd05 bd05 bd05 bd03 bd03 bd03 bd03"
+        "bd06 bd06 bd06 bd06 bd06 bd06 bd04 bd04 bd04 .   "
+        "bd06 bd06 bd06 bd06 bd06 bd06 bd04 bd04 bd04 .   "
+        "bd06 bd06 bd06 bd06 bd06 bd06 bd04 bd04 bd04 .   "
+        "bd06 bd06 bd06 bd06 bd06 bd06 bdre bdre bdre bdre"
+        "bd06 bd06 bd06 bd06 bd06 bd06 bdre bdre bdre bdre"
+}
+.bd03 {
+    grid-area: bd03;
+}
+.bd04 {
+    grid-area: bd04;
+}
+.bd05 {
+    grid-area: bd05;
+}
+.bd06 {
+    grid-area: bd06;
+}
+.bd-research {
+    grid-area: bdre;
+    margin-left: 2vw;
+}
+.bd-grid03 {
+    /* grid-auto-rows: minmax(auto, 100px); */
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-areas:
+    
+}
+.bd07 {
+    grid-area: bd03;
+}
+.bd08 {
+    grid-area: bd04;
+}
+.bd09 {
+    grid-area: bd05;
+}
+.center-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
