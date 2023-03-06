@@ -192,6 +192,12 @@ p {
     max-width: 350px;
     display: inline-block;
 }
+.textbox02 {
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    max-width: 400px;
+}
 .bold {
     font-weight: 900;
 }
@@ -215,12 +221,15 @@ img {
     justify-content: center;
     align-items: center;
 }
-.bd-grid01 {
+.mosaic {
     display: grid;
+    max-width: 70%;
     grid-gap: 10px;
-    max-width: 100%;
-    grid-auto-rows: minmax(auto, 100px);
-    grid-template-columns: repeat(10, 100px);
+}
+
+.bd-grid01 {
+    /* grid-auto-rows: minmax(auto, 100px); */
+    grid-template-columns: repeat(10, 1fr);
     grid-template-areas:
         "bd01 bd01 bd01 bd01 bd01 .    .    .    .    ."
         "bd01 bd01 bd01 bd01 bd01 .    .    .    .    ."
@@ -235,8 +244,6 @@ img {
 }
 .bd01 {
     grid-area: bd01;
-    background-image: url(projects/black-diamond/bd01.jpg);
-    background-size: cover;
 }
 .bd-intro {
     grid-area: bdin;
@@ -244,70 +251,60 @@ img {
 }
 .bd02 {
     grid-area: bd02;
-    background-image: url(projects/black-diamond/bd02.jpg);
-    background-size: cover;
 }
 .bd-challenge {
     grid-area: bdch;
     margin-left: 2vw;
 }
 .bd-grid02 {
-    display: grid;
-    grid-gap: 10px;
-    max-width: 100%;
-    grid-auto-rows: minmax(auto, 100px);
-    grid-template-columns: repeat(10, 100px);
+    /* grid-auto-rows: minmax(auto, 100px); */
+    grid-template-columns: repeat(10, 1fr);
     grid-template-areas:
-        "bd04 bd04 bd04 bd03 bd03 bd03 .    .    .    .   "
-        "bd04 bd04 bd04 bd03 bd03 bd03 .    .    .    .   "
-        "bd04 bd04 bd04 bd03 bd03 bd03 bd05 bd05 bd05 bd05"
-        "bd04 bd04 bd04 bd03 bd03 bd03 bd05 bd05 bd05 bd05"
-        "bd06 bd06 bd06 bd06 bd06 bd06 bd05 bd05 bd05 bd05"
-        "bd06 bd06 bd06 bd06 bd06 bd06 bd05 bd05 bd05 bd05"
-        "bd06 bd06 bd06 bd06 bd06 bd06 bd05 bd05 bd05 bd05"
-        "bd06 bd06 bd06 bd06 bd06 bd06 .    .    .    .   "
-        "bd06 bd06 bd06 bd06 bd06 bd06 .    .    .    .   "
+        "bd05 bd05 bd05 bd05 bd05 bd05 .    .    .    .   "
+        "bd05 bd05 bd05 bd05 bd05 bd05 .    .    .    .   "
+        "bd05 bd05 bd05 bd05 bd05 bd05 bd03 bd03 bd03 bd03"
+        "bd05 bd05 bd05 bd05 bd05 bd05 bd03 bd03 bd03 bd03"
+        "bd05 bd05 bd05 bd05 bd05 bd05 bd03 bd03 bd03 bd03"
+        "bd06 bd06 bd06 bd06 bd06 bd06 bd04 bd04 bd04 .   "
+        "bd06 bd06 bd06 bd06 bd06 bd06 bd04 bd04 bd04 .   "
+        "bd06 bd06 bd06 bd06 bd06 bd06 bd04 bd04 bd04 .   "
         "bd06 bd06 bd06 bd06 bd06 bd06 bdre bdre bdre bdre"
         "bd06 bd06 bd06 bd06 bd06 bd06 bdre bdre bdre bdre"
 }
 .bd03 {
     grid-area: bd03;
-    background-image: url(projects/black-diamond/bd03.jpg);
-    background-size: cover;
 }
 .bd04 {
     grid-area: bd04;
-    background-image: url(projects/black-diamond/bd04.jpg);
-    background-size: cover;
 }
 .bd05 {
     grid-area: bd05;
-    background-image: url(projects/black-diamond/bd05.jpg);
-    background-size: cover;
 }
 .bd06 {
     grid-area: bd06;
-    background-image: url(projects/black-diamond/bd06.jpg);
-    background-size: cover;
 }
 .bd-research {
     grid-area: bdre;
     margin-left: 2vw;
 }
+.bd-grid03 {
+    /* grid-auto-rows: minmax(auto, 100px); */
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-areas:
+    
+}
+.bd07 {
+    grid-area: bd03;
+}
+.bd08 {
+    grid-area: bd04;
+}
+.bd09 {
+    grid-area: bd05;
+}
 .center-content {
-    margin: auto;
-    max-width: 96%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-.textbox02 {
-    display: flex;
-    flex-direction: column;
-    justify-content:flex-end;
-}
-#test {
-    grid-area: bdch;
-    margin-left: 2vw;
 }
