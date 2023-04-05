@@ -1,0 +1,251 @@
+#ha-arrow01{
+    margin-bottom: 10px;
+    width: 10px;
+    margin-left: -34%;
+    z-index: -10;
+}
+#ha-arrow02{
+    margin-bottom: 10px;
+    width: 10px;
+    margin-left: -28%;
+    z-index: -10;
+}
+#ha-arrow03{
+    margin-bottom: 10px;
+    width: 10px;
+    margin-left: 0%;
+    z-index: -10;
+}
+#ha-arrow04{
+    margin-bottom: 10px;
+    width: 10px;
+    margin-left: -42%;
+    z-index: -10;
+}
+#ha-arrow05{
+    margin-bottom: 10px;
+    width: 10px;
+    margin-left: -47%;
+    z-index: -10;
+}
+#ha-arrow06{
+    margin-bottom: 10px;
+    width: 10px;
+    margin-left: 35%;
+    z-index: -10;
+}
+.ha-grid01 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+        "ha01 .   "
+        "ha01 ha03"
+        "ha02 .   "
+        "ha02 ha04"
+}
+.ha-intro01 {
+    grid-area: ha01;
+}
+.ha-intro03 {
+    grid-area: ha02;
+}
+.ha-intro02 {
+    grid-area: ha03;
+    margin-left: 2vw;
+}
+.ha-intro04 {
+    grid-area: ha04;
+    margin-left: 2vw;
+}
+.ha-grid02 {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas:
+        "ha06 ha06 ha06 ha05 ha05"
+        "ha06 ha06 ha06 .    .   "
+        "ha06 ha06 ha06 ha07 ha07"
+}
+.ha-research01 {
+    grid-area: ha05;
+}
+.ha-research02 {
+    grid-area: ha06;
+}
+.ha-research03 {
+    grid-area: ha07;
+    margin-left: 2vw;
+}
+.ha-grid03 {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas:
+        "ha08 ha09 ha10 ha12 ha12"
+        "ha08 ha11 ha10 ha12 ha12"
+}
+.ha-ideation01 {
+    grid-area: ha08;
+    align-self:flex-end;
+}
+.ha-ideation02 {
+    grid-area: ha09;
+}
+.ha-ideation03 {
+    grid-area: ha10;
+    align-self:flex-end;
+}
+.ha-ideation04 {
+    grid-area: ha11;
+}
+.ha-ideation05 {
+    grid-area: ha12;
+    margin-left: 2vw;
+    align-self:flex-end;
+}
+.ha-grid04 {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas:
+        ".    .    ha13 ha13 .   "
+        ".    .    ha13 ha13 .   "
+        "ha14 ha14 ha13 ha13 .   "
+        "ha14 ha14 ha15 ha15 .   "
+        "ha14 ha14 ha15 ha15 .   "
+        "ha16 ha16 ha15 ha15 .   "
+        "ha16 ha16 ha17 ha17 ha17"
+        "ha16 ha16 ha17 ha17 ha17"
+}
+.ha-process01 {
+    grid-area: ha13;
+}
+.ha-process02 {
+    grid-area: ha14;
+}
+.ha-process03 {
+    grid-area: ha15;
+}
+.ha-process04 {
+    grid-area: ha16;
+}
+.ha-process05 {
+    grid-area: ha17;
+    margin-left: 2vw;
+}
+.ha-grid05 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        "ha18 ha18 ha18"
+        "ha20 ha19 ha21"
+        "ha20 .    .   "
+        "ha20 ha22 ha22"
+}
+.ha-result01 {
+    grid-area: ha18;
+}
+.ha-result02 {
+    grid-area: ha19;
+}
+.ha-result03 {
+    grid-area: ha20;
+}
+.ha-result04 {
+    grid-area: ha21;
+}
+.ha-result05 {
+    grid-area: ha22;
+    margin-left: 2vw;
+}
+.ha-grid06 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+        "ha23 .   "
+        "ha23 ha28"
+        "ha23 ha28"
+        "ha24 ha28"
+        "ha24 ha27"
+        "ha24 ha27"
+        "ha25 ha27"
+        "ha25 ha26"
+        "ha25 ha26"
+        ".    ha26"
+}
+.ha-result06 {
+    grid-area: ha23;
+}
+.ha-result07 {
+    grid-area: ha24;
+}
+.ha-result08 {
+    grid-area: ha25;
+}
+.ha-result09 {
+    grid-area: ha26;
+}
+.ha-result10 {
+    grid-area: ha27;
+}
+.ha-result11 {
+    grid-area: ha28;
+}
+.ha-back {
+    margin-left: 35%;
+    font-family: 'Roboto Mono', sans-serif;
+    font-size: 1em;
+    font-weight: 900;
+    color: #A11515;
+    letter-spacing: 0.2em;
+}
+@media (max-width:800px) {
+    .ha-grid01 {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas:
+            "ha03"
+            "ha01"
+            "ha04"
+            "ha02"
+    }
+    .ha-grid02 {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas:
+            "ha07"
+            "ha06"
+            "ha05"
+    }
+    .ha-grid03 {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "ha12 ha12 ha12"
+            "ha11 ha11 ha11"
+            "ha08 ha09 ha10"
+    }
+    .ha-ideation01 {
+        align-self:auto;
+    }
+    .ha-ideation03 {
+        align-self:auto;
+    }
+    .ha-grid04 {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "ha17 ha17"
+            "ha13 ha14"
+            "ha15 ha16"
+    }
+    .ha-grid05 {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "ha22 ha22 ha22"
+            "ha18 ha18 ha18"
+            "ha20 ha19 ha21"
+    }
+    .ha-grid06 {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "ha23 ha28"
+            "ha24 ha27"
+            "ha25 ha26"
+    }
+    #ha-arrow01, #ha-arrow02, #ha-arrow03, #ha-arrow04, #ha-arrow05, #ha-arrow06 {
+        margin-left: -75%;
+        margin-top: 0px;
+    }
+    .ha-back {
+        align-self: flex-start;
+        margin-left: 10px;
+    }
+}   

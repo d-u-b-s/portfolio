@@ -1,0 +1,230 @@
+#nc-arrow01{
+    margin-bottom: 10px;
+    width: 10px;
+    margin-left: -42%;
+    z-index: -10;
+}
+#nc-arrow02{
+    margin-bottom: 10px;
+    width: 10px;
+    margin-left: -42%;
+    z-index: -10;
+}
+#nc-arrow03{
+    margin-bottom: 10px;
+    width: 10px;
+    margin-left: -36%;
+    z-index: -10;
+}
+#nc-arrow04{
+    margin-bottom: 10px;
+    width: 10px;
+    margin-left: -47%;
+    z-index: -10;
+}
+#nc-arrow05{
+    margin-bottom: 10px;
+    width: 10px;
+    margin-left: -53%;
+    z-index: -10;
+}
+#nc-arrow06{
+    margin-bottom: 10px;
+    width: 10px;
+    margin-left: 53%;
+    z-index: -10;
+}
+.nc-grid01 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+        "nc01 .   "
+        "nc01 nc03"
+        "nc02 .   "
+        "nc02 nc04"
+}
+.nc-intro01 {
+    grid-area: nc01;
+}
+.nc-intro03 {
+    grid-area: nc02;
+}
+.nc-intro02 {
+    grid-area: nc03;
+    margin-left: 2vw;
+}
+.nc-intro04 {
+    grid-area: nc04;
+    margin-left: 2vw;
+}
+.nc-grid02 {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas:
+        "nc05 nc05 .    .    .   "
+        "nc05 nc05 nc06 nc07 nc08"
+        "nc05 nc05 .    .    .   "
+        "nc05 nc05 nc12 nc12 nc12"
+}
+.nc-research01 {
+    grid-area: nc05;
+}
+.nc-research02 {
+    grid-area: nc06;
+}
+.nc-research03 {
+    grid-area: nc07;
+}
+.nc-research04 {
+    grid-area: nc08;
+}
+.nc-research08 {
+    grid-area: nc12;
+    margin-left: 2vw;
+}
+.nc-grid03 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+        "nc13 nc13"
+        "nc14 .   "
+        "nc14 nc15"
+}
+.nc-ideation01 {
+    grid-area: nc13;
+}
+.nc-ideation02 {
+    grid-area: nc14;
+}
+.nc-ideation03 {
+    grid-area: nc15;
+    margin-left: 2vw;
+}
+.nc-grid04 {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+        "nc18 nc18 .    .   "
+        "nc18 nc18 nc16 nc16"
+        "nc19 nc19 nc17 nc17"
+        "nc19 nc19 .    .   "
+        "nc19 nc19 nc20 nc20"
+}
+.nc-process01 {
+    grid-area: nc16;
+}
+.nc-process02 {
+    grid-area: nc17;
+}
+.nc-process03 {
+    grid-area: nc18;
+}
+.nc-process04 {
+    grid-area: nc19;
+}
+.nc-process05 {
+    grid-area: nc20;
+    margin-left: 2vw;
+}
+.nc-grid05 {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas:
+        "nc21 nc21 nc24 nc24 nc22 nc22"
+        "nc23 nc23 nc23 .    .    .   " 
+        "nc23 nc23 nc23 nc25 nc25 nc25" 
+}
+.nc-result01 {
+    grid-area: nc21;
+}
+.nc-result02 {
+    grid-area: nc22;
+}
+.nc-result03 {
+    grid-area: nc23;
+}
+.nc-result04 {
+    grid-area: nc24;
+}
+.nc-result05 {
+    grid-area: nc25;
+    margin-left: 2vw;
+}
+.nc-grid06 {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+        "nc26 .    .    .   "
+        "nc26 nc27 .    .   " 
+        "nc26 nc27 nc28 .   " 
+        ".    nc27 nc28 nc29" 
+        ".    .    nc28 nc29" 
+        ".    .    .    nc29" 
+}
+.nc-result06 {
+    grid-area: nc26;
+}
+.nc-result07 {
+    grid-area: nc27;
+}
+.nc-result08 {
+    grid-area: nc28;
+}
+.nc-result09 {
+    grid-area: nc29;
+}
+.nc-back {
+    font-family: 'Roboto Mono', sans-serif;
+    font-size: 1em;
+    font-weight: 900;
+    color: #A11515;
+    letter-spacing: 0.2em;
+    margin-left: 53%;
+}
+@media (max-width:800px) {
+    .nc-grid01 {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas:
+            "nc03"
+            "nc01"
+            "nc04"
+            "nc02"
+    }
+    .nc-grid02 {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "nc12 nc12 nc12"    
+            "nc05 nc05 nc05"
+            "nc06 nc07 nc08"
+    }
+    .nc-grid03 {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas:
+            "nc15"
+            "nc14"
+            "nc13"
+    }
+    .nc-grid04 {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas:
+            "nc20"
+            "nc18"
+            "nc19"
+            "nc16"
+            "nc17"
+    }
+    .nc-grid05 {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-areas:
+            "nc25 nc25 nc25 nc25 nc25 nc25"
+            "nc21 nc21 nc24 nc24 nc22 nc22"
+            "nc23 nc23 nc23 nc23 nc23 nc23" 
+    }
+    .nc-grid06 {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "nc26 nc27"  
+            "nc28 nc29" 
+    }
+    #nc-arrow01, #nc-arrow02, #nc-arrow03, #nc-arrow04, #nc-arrow05, #nc-arrow06 {
+        margin-left: -75%;
+    }
+    .nc-back {
+        align-self: flex-start;
+        margin-left: 10px;
+    }
+}

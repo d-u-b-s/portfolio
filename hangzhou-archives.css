@@ -1,0 +1,209 @@
+#hz-arrow01{
+    margin-bottom: 10px;
+    width: 10px;
+    margin-left: -10%;
+    z-index: -10;
+}
+#hz-arrow02{
+    margin-bottom: 10px;
+    width: 10px;
+    margin-left: -43%;
+    z-index: -10;
+}
+#hz-arrow03{
+    margin-bottom: 10px;
+    width: 10px;
+    margin-left: -43%;
+    z-index: -10;
+}
+#hz-arrow04{
+    margin-bottom: 10px;
+    width: 10px;
+    margin-left: -28%;
+    z-index: -10;
+}
+#hz-arrow05{
+    margin-bottom: 10px;
+    margin-top: -20px;
+    width: 10px;
+    margin-left: -43%;
+    z-index: -10;
+}
+#hz-arrow06{
+    margin-bottom: 10px;
+    width: 10px;
+    margin-left: 0%;
+    z-index: -10;
+}
+.hz-grid01 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+        "hz01 .   "
+        "hz01 hz03"
+        "hz02 .   "
+        "hz02 hz04"
+}
+.hz-intro01 {
+    grid-area: hz01;
+}
+.hz-intro03 {
+    grid-area: hz02;
+}
+.hz-intro02 {
+    grid-area: hz03;
+    margin-left: 2vw;
+}
+.hz-intro04 {
+    grid-area: hz04;
+    margin-left: 2vw;
+}
+.hz-grid02 {
+    grid-template-columns: repeat(14, 1fr);
+    grid-template-areas:
+        
+        ".    .    .    .    .    hz05 hz05 hz05 hz05 hz05 hz05 .    .    .   "
+        ".    .    .    .    hz06 hz06 hz06 hz06 hz06 hz06 .    .    .    .   "
+        ".    .    .    hz07 hz07 hz07 hz07 hz07 hz07 .    .    .    .    .   "
+        ".    .    hz08 hz08 hz08 hz08 hz08 hz08 .    .    .    .    .    .   "
+        ".    hz09 hz09 hz09 hz09 hz09 hz09 .    .    .    .    .    .    .   "
+        "hz10 hz10 hz10 hz10 hz10 hz10 hz11 hz11 hz11 hz11 hz11 hz11 hz11 hz11"
+}
+.hz-research01 {
+    grid-area: hz05;
+}
+.hz-research02 {
+    grid-area: hz06;
+}
+.hz-research03 {
+    grid-area: hz07;
+}
+.hz-research04 {
+    grid-area: hz08;
+}
+.hz-research05 {
+    grid-area: hz09;
+}
+.hz-research06 {
+    grid-area: hz10;
+}
+.hz-research07 {
+    grid-area: hz11;
+    align-self: flex-end;
+    margin-left: 2vw;
+}
+.hz-grid03 {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas:
+        "hz13 hz13 .    .    .   "
+        "hz13 hz13 hz12 hz12 hz12"
+        "hz14 hz14 hz12 hz12 hz12"
+        "hz14 hz14 hz12 hz12 hz12"
+        "hz15 hz15 hz12 hz12 hz12"
+        "hz15 hz15 hz17 hz17 hz17"
+        "hz16 hz16 hz17 hz17 hz17"
+        "hz16 hz16 hz17 hz17 hz17"
+}
+.hz-ideation01 {
+    grid-area: hz12;
+}
+.hz-ideation02 {
+    grid-area: hz13;
+}
+.hz-ideation03 {
+    grid-area: hz14;
+}
+.hz-ideation04 {
+    grid-area: hz15;
+}
+.hz-ideation05 {
+    grid-area: hz16;
+}
+.hz-ideation06 {
+    grid-area: hz17;
+    align-self: flex-end;
+    margin-left: 2vw;
+}
+.hz-grid04 {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas:
+        "hz18 hz18 hz18 hz19 hz19"
+}
+.hz-process01 {
+    grid-area: hz18;
+}
+.hz-process02 {
+    grid-area: hz19;
+    align-self: flex-end;
+    margin-left: 2vw;
+}
+.hz-grid05 {
+    grid-template-columns: result(7, 1fr);
+    grid-template-areas:
+        "hz20 hz20 hz20 hz21 hz21 hz21 hz21"
+        "hz20 hz20 hz20 hz22 hz22 hz22 hz22"
+}
+.hz-result01 {
+    grid-area: hz20;
+}
+.hz-result02 {
+    grid-area: hz21;
+}
+.hz-result03 {
+    grid-area: hz22;
+    align-self: flex-end;
+    margin-left: 2vw;
+}
+.hz-back {
+    font-family: 'Roboto Mono', sans-serif;
+    font-size: 1em;
+    font-weight: 900;
+    color: #A11515;
+    letter-spacing: 0.2em;
+}
+@media (max-width:800px) {
+    .hz-grid01 {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas:
+            "hz03"
+            "hz01"
+            "hz04"
+            "hz02"
+    }
+    .hz-grid02 {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "hz11 hz11"
+            "hz05 hz06"
+            "hz07 hz08"
+            "hz10 hz09"
+    }
+    .hz-grid03 {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "hz17 hz17"
+            "hz12 hz12"
+            "hz13 hz14"
+            "hz15 hz16"
+    }
+    .hz-grid04 {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas:
+            "hz19"
+            "hz18"
+    }
+    .hz-grid05 {
+        grid-template-columns: result(1, 1fr);
+        grid-template-areas:
+            "hz22"
+            "hz20"
+            "hz21"
+    }
+    #hz-arrow01, #hz-arrow02, #hz-arrow03, #hz-arrow04, #hz-arrow05, #hz-arrow06 {
+        margin-left: -75%;
+        margin-top: 0px;
+    }
+    .hz-back {
+        align-self: flex-start;
+        margin-left: 10px;
+    }
+}
