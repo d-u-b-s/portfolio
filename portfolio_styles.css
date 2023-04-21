@@ -200,7 +200,12 @@ p {
     transition: 0.5s;
 }
 .clickable {
+    transition: all 0.2s ease-in-out;
     cursor: pointer;
+}
+.clickable:hover {
+    padding: 2px;
+    background-color: #A11515;
 }
 .blurb {
     text-align: left;
@@ -243,7 +248,8 @@ p {
 img {
     max-width: 100%;
     height: auto;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); 
+    
 }
 .no-shadow {
     box-shadow: 0px 0px 0px !important;
@@ -275,8 +281,6 @@ img {
 .underline:hover::after {
     width: 100%;
     background-color: #A11515;;
-    /* left: 0; */
-    /* right: auto; */
 }
 
 @media (max-width:1500px) {
