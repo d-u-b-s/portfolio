@@ -1,3 +1,17 @@
+.index-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    flex: 1;
+}
+.index-gallery {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    
+}
 .bust {
     position: absolute;
     top: 35vh;
@@ -18,12 +32,17 @@
     width: 10px;
     margin-left: 15vw;
 }
-.project-title {
+.header02 {
     float: right;
     margin-right: 5vw;
     margin-left: 5vw;
-    margin-top: -42px;
+    margin-top: -60px;
     margin-bottom: 5px;
+    font-size: 3em;
+    letter-spacing: 0.2em;
+    font-family: 'Roboto Mono', sans-serif;
+    color: #A11515;
+    margin-right: 5vw;
 }
 #name01 {
     font-size: 12vw;
