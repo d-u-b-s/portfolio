@@ -1,35 +1,37 @@
 #ts-arrow01{
+    margin-top: -100px;
     margin-bottom: 10px;
     width: 10px;
     margin-left: -35%;
     z-index: -10;
 }
 #ts-arrow02{
-    margin-top: -50px;
+    margin-top: -100px;
     margin-bottom: 10px;
     width: 10px;
     margin-left: -28%;
     z-index: -10;
 }
 #ts-arrow03{
-    margin-bottom: 10px;
+    margin-top: -100px;
     width: 10px;
     margin-left: -28%;
     z-index: -10;
 }
 #ts-arrow04{
-    margin-bottom: 10px;
+    margin-top: -100px;
     width: 10px;
     margin-left: -35%;
     z-index: -10;
 }
 #ts-arrow05{
-    margin-bottom: 10px;
+    margin-top: -100px;
     width: 10px;
     margin-left: -28%;
     z-index: -10;
 }
 #ts-arrow06{
+    margin-top: -100px;
     margin-bottom: 10px;
     width: 10px;
     margin-left: 0%;

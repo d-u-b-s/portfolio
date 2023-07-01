@@ -36,6 +36,18 @@ body {
 .para {
     transform: translateZ(-2px) scale(1.1);
 }
+.project-wrapper{
+    display: flex;
+    align-items: start;
+}
+.side-menu {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    width: 200px;
+    position: sticky;
+    top: 20px;
+}
 .name02 {
     margin-top: 8vw;
     margin-left: 15vw;
@@ -85,6 +97,7 @@ p {
     color: #A11515;
     letter-spacing: 0.2em;
     margin-top: 5px;
+    margin-bottom: 10px;
 }
 
 .nav-item02 {
@@ -307,6 +320,9 @@ img {
     }
 }
 @media only screen and (max-width: 800px){
+    .side-menu{
+        display: none;
+    }
     .modalImg {
       max-width: 100%;
     }
