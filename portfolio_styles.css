@@ -92,6 +92,8 @@ p {
 }
 .nav-item01 {
     font-family: 'Roboto Mono', sans-serif;
+    inline-size: fit-content;
+    text-align: center;
     font-size: 1em;
     font-weight: 900;
     color: #A11515;
