@@ -1,7 +1,7 @@
 .index-panel {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content:flex-start;
     align-items: center;
     margin-left: 10px;
     flex: 1;

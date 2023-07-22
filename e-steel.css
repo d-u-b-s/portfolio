@@ -115,8 +115,17 @@
     grid-template-areas:
         "st15 st15 .    .    .   "
         "st15 st15 st18 st18 st18"
+        "st15 st15 st18 st18 st18"
+        "st15 st15 st18 st18 st18"
+        "st15 st15 st18 st18 st18"
         "st16 st16 st18 st18 st18"
+        "st16 st16 st19 st19 st19"
+        "st16 st16 st19 st19 st19"
+        "st16 st16 st19 st19 st19"
+        "st16 st16 st19 st19 st19"
+        "st16 st16 st19 st19 st19"
         "st17 st17 st19 st19 st19"
+        "st17 st17 st20 st20 st20"
 }
 .st-creation01 {
     grid-area: st15;
@@ -132,6 +141,9 @@
 }
 .st-creation05 {
     grid-area: st19;
+}
+.st-creation06 {
+    grid-area: st20;
     margin-left: 2vw;
     align-self: flex-end;
 }
@@ -162,6 +174,18 @@
     margin-bottom: 20px;
 }
 @media (max-width:800px) {
+    .st-ideation03 {
+        display: none;
+    }
+    .st-ideation04 {
+        display: none;
+    }
+    .st-creation02 {
+        display: none;
+    }
+    .st-creation03 {
+        display: none;
+    }
     .st-grid01 {
         grid-template-columns: repeat(1, 1fr);
         grid-template-areas:
@@ -173,6 +197,7 @@
     .st-grid02 {
         grid-template-columns: repeat(1, 1fr);
         grid-template-areas:
+            "st08"
             "st07"
             "st06"
             "st05"
@@ -180,9 +205,10 @@
     .st-grid03 {
         grid-template-columns: repeat(1, 1fr);
         grid-template-areas:
-            "st10"
+            "st14"
             "st08"
             "st09"
+            "st12"
     }
     .st-ideation01 {
         align-self:auto;
@@ -193,9 +219,10 @@
     .st-grid04 {
         grid-template-columns: repeat(1, 1fr);
         grid-template-areas:
-            "st13"
-            "st11"
-            "st12"
+            "st20"
+            "st19"
+            "st15"
+            "st18"
     }
     .st-grid05 {
         grid-template-columns: repeat(1, 1fr);
