@@ -74,7 +74,7 @@
 }
 @media (max-width:800px) {
     .bust {
-        width: 70%;
+        width: 60%;
         top: 40vh;
         right: 2vw;
     }
