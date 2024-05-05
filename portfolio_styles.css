@@ -130,6 +130,7 @@ p {
 .flex-column {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 .flex-row {
     display: flex;
@@ -141,7 +142,7 @@ p {
 .arrow01 {
     margin-top: 5px;
     margin-bottom: 10px;
-    width: 100px;
+    width: 88px;
 }
 .arrow02 {
     width: 100px;
