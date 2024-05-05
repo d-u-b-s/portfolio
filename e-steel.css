@@ -38,6 +38,7 @@
     margin-bottom: 10px;
     width: 10px;
     z-index: -10;
+    margin-left: 35%;
 }
 .st-grid01 {
     grid-template-columns: repeat(2, 1fr);
@@ -165,12 +166,37 @@
     grid-area: st16;
     margin-left: 2vw;
 }
+.st-grid06 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+        "st17 st18"
+        "st17 st18"
+        "st19 st18"
+        "st19 st20"
+        "st19 st20"
+        "st19 st20"
+        "st19 st20"
+        "st19 st20"
+}
+.st-result04 {
+    grid-area: st17;
+}
+.st-result05 {
+    grid-area: st18;
+}
+.st-result06 {
+    grid-area: st19;
+}
+.st-result07 {
+    grid-area: st20;
+}
 .st-back {
     font-family: 'Roboto Mono', sans-serif;
     font-size: 1em;
-    font-weight: 900;
+    font-weight: 700;
     color: #A11515;
     letter-spacing: 0.2em;
+    margin-left: 35%;
     margin-bottom: 20px;
 }
 @media (max-width:800px) {
