@@ -169,26 +169,26 @@
 .st-grid06 {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
-        "st17 st18"
-        "st17 st18"
-        "st19 st18"
-        "st19 st20"
-        "st19 st20"
-        "st19 st20"
-        "st19 st20"
-        "st19 st20"
+        "st21 st22"
+        "st21 st22"
+        "st23 st22"
+        "st23 st24"
+        "st23 st24"
+        "st23 st24"
+        "st23 st24"
+        "st23 st24"
 }
 .st-result04 {
-    grid-area: st17;
+    grid-area: st21;
 }
 .st-result05 {
-    grid-area: st18;
+    grid-area: st22;
 }
 .st-result06 {
-    grid-area: st19;
+    grid-area: st23;
 }
 .st-result07 {
-    grid-area: st20;
+    grid-area: st24;
 }
 .st-back {
     font-family: 'Roboto Mono', sans-serif;
@@ -258,11 +258,12 @@
             "st15"
     }
     .st-grid06 {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         grid-template-areas:
-            "st23 st28"
-            "st24 st27"
-            "st25 st26"
+            "st21"
+            "st22"
+            "st23"
+            "st24"
     }
     #st-arrow01, #st-arrow02, #st-arrow03, #st-arrow04, #st-arrow05, #st-arrow06 {
         margin-left: -75%;
