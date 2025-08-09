@@ -1,3 +1,17 @@
+@font-face {
+    font-family: 'Roboto Mono';
+    src: url('fonts/RobotoMono-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Roboto Mono';
+    src: url('fonts/RobotoMono-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: italic;
+    font-display: swap;
+}
 * {
     margin: 0;
     padding: 0;
@@ -142,7 +156,7 @@ p {
 .arrow01 {
     margin-top: 5px;
     margin-bottom: 10px;
-    width: 6em;
+    width: 100px;
 }
 .arrow02 {
     width: 100px;
