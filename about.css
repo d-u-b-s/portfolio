@@ -1,5 +1,5 @@
 .ab-grid01 {
-    margin-top: 300px;
+    margin-top: 150px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
         "ab01 ab02"
@@ -46,21 +46,66 @@
 
 @media (max-width:800px) {
     .ab-grid01 {
+        margin-top: 100px;
         grid-template-columns: repeat(1, 1fr);
         grid-template-areas:
         "ab01"
         "ab02"
     }
     .ab-grid02 {
+        margin-top: 150px;
         grid-template-columns: repeat(1, 1fr);
         grid-template-areas:
         "ab03"
         "ab04"
     }
     .ab-grid03 {
+        margin-top: 150px;
         grid-template-columns: repeat(1, 1fr);
         grid-template-areas:
         "ab05"
         "ab06"
+    }
+    .ab-bio01, .ab-bio02, .ab-bio03 {
+        margin-left: 0;
+        margin-top: 20px;
+        align-self: flex-start;
+    }
+    .hand01, .hand02, .hand03 {
+        width: 100%;
+        height: auto;
+        max-width: 400px;
+        margin: 0 auto 12px auto;
+        display: block;
+    }
+}
+
+@media (max-width:600px) {
+    .ab-grid01 {
+        margin-top: 80px;
+    }
+    .ab-grid02, .ab-grid03 {
+        margin-top: 120px;
+    }
+    .ab-bio01, .ab-bio02, .ab-bio03 {
+        margin-top: 15px;
+    }
+    .hand01, .hand02, .hand03 {
+        max-width: 300px;
+    }
+}
+
+@media (max-width:480px) {
+    .ab-grid01 {
+        margin-top: 60px;
+    }
+    .ab-grid02, .ab-grid03 {
+        margin-top: 100px;
+    }
+    .ab-bio01, .ab-bio02, .ab-bio03 {
+        margin-top: 12px;
+    }
+    .hand01, .hand02, .hand03 {
+        max-width: 250px;
     }
 }

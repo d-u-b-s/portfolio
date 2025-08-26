@@ -192,11 +192,13 @@
             "nc02"
     }
     .nc-grid02 {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         grid-template-areas:
-            "nc12 nc12 nc12"    
-            "nc05 nc05 nc05"
-            "nc06 nc07 nc08"
+            "nc08"    
+            "nc09"
+            "nc10"
+            "nc11"
+            "nc12"
     }
     .nc-grid03 {
         grid-template-columns: repeat(1, 1fr);
@@ -215,20 +217,26 @@
             "nc17"
     }
     .nc-grid05 {
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         grid-template-areas:
-            "nc25 nc25 nc25 nc25 nc25 nc25"
-            "nc21 nc21 nc24 nc24 nc22 nc22"
-            "nc23 nc23 nc23 nc23 nc23 nc23" 
+            "nc23"
+            "nc25"
+            "nc24" 
+            "nc23" 
+            "nc22" 
+            "nc21" 
     }
     .nc-grid06 {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         grid-template-areas:
-            "nc26 nc27"  
-            "nc28 nc29" 
+            "nc29"  
+            "nc28" 
+            "nc27" 
+            "nc26" 
     }
     #nc-arrow01, #nc-arrow02, #nc-arrow03, #nc-arrow04, #nc-arrow05, #nc-arrow06 {
         margin-left: -75%;
+        margin-top: 0px;
     }
     .nc-back {
         align-self: flex-start;

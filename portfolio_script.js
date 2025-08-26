@@ -30,8 +30,21 @@ const hand02 = document.querySelector('.hand02.no-shadow');
 const hand03 = document.querySelector('.hand03.no-shadow');
 
 window.addEventListener('scroll', function() {
-    const scrolled = window.scrollY;
-    if (hand01) hand01.style.transform = `translateY(${scrolled * 0.1}px)`;
-    if (hand02) hand02.style.transform = `translateY(${scrolled * 0.1}px)`;
-    if (hand03) hand03.style.transform = `translateY(${scrolled * 0.1}px)`;
+    // Only apply parallax effect on screens wider than 800px
+    if (window.innerWidth > 800) {
+        const scrolled = window.scrollY;
+        if (hand01) hand01.style.transform = `translateY(${scrolled * 0.1}px)`;
+        if (hand02) hand02.style.transform = `translateY(${scrolled * 0.1}px)`;
+        if (hand03) hand03.style.transform = `translateY(${scrolled * 0.1}px)`;
+    }
+});
+
+// Reset parallax effect when window is resized
+window.addEventListener('resize', function() {
+    if (window.innerWidth <= 800) {
+        // Remove parallax effect on mobile
+        if (hand01) hand01.style.transform = 'translateY(0px)';
+        if (hand02) hand02.style.transform = 'translateY(0px)';
+        if (hand03) hand03.style.transform = 'translateY(0px)';
+    }
 });

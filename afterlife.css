@@ -1,0 +1,234 @@
+#da-arrow01{
+    margin-top: -100px;
+    margin-bottom: 10px;
+    width: 10px;
+    margin-left: -35%;
+    z-index: -10;
+}
+#da-arrow02{
+    margin-top: -100px;
+    margin-bottom: 10px;
+    width: 10px;
+    margin-left: -48%;
+    z-index: -10;
+}
+#da-arrow03{
+    margin-top: -100px;
+    margin-bottom: 10px;
+    width: 10px;
+    margin-left: -48%;
+    z-index: -10;
+}
+#da-arrow04{
+    margin-top: -100px;
+    margin-bottom: 10px;
+    width: 10px;
+    margin-left: -35%;
+    z-index: -10;
+}
+#da-arrow05{
+    margin-top: -100px;
+    margin-bottom: 10px;
+    width: 10px;
+    margin-left: -35%;
+    z-index: -10;
+}
+#da-arrow06{
+    margin-top: -100px;
+    margin-bottom: 10px;
+    width: 10px;
+    margin-left: -35%;
+    z-index: -10;
+}
+.da-grid01 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+        "da01 .   "
+        "da01 da03"
+        "da02 .   "
+        "da02 da04"
+}
+.da-intro01 {
+    grid-area: da01;
+}
+.da-intro03 {
+    grid-area: da02;
+}
+.da-intro02 {
+    grid-area: da03;
+    margin-left: 2vw;
+}
+.da-intro04 {
+    grid-area: da04;
+    margin-left: 2vw;
+}
+.da-grid02 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+        "da05 da05"
+        "da07 da07"
+        "da06 da08"
+        "da06 da08"
+}
+.da-research01 {
+    grid-area: da05;
+}
+.da-research02 {
+    grid-area: da06;
+}
+.da-research03 {
+    grid-area: da07;
+}
+.da-research04 {
+    grid-area: da08;
+    margin-left: 2vw;
+    align-self: end;
+}
+/* .da-grid03 {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+        "da09 da09 .    .   "
+        "da09 da09 da10 da11"
+        "da12 da12 da10 da11"
+        "da12 da12 da13 da13"
+} */
+.da-grid03 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        "da10 da09 da12"
+        "da10 da13 da13"
+        "da11 da13 da13"
+        "da11 da13 da13"
+}
+.da-ideation01 {
+    grid-area: da09;
+}
+.da-ideation02 {
+    grid-area: da10;
+}
+.da-ideation03 {
+    grid-area: da11;
+}
+.da-ideation04 {
+    grid-area: da12;
+}
+.da-ideation05 {
+    grid-area: da13;
+    margin-left: 2vw;
+    align-self: end;
+}
+.da-grid04 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+        "da16 da16"
+        "da15 da17"
+        "da14 da17"
+}
+.da-process01 {
+    grid-area: da14;
+}
+.da-process02 {
+    grid-area: da15;
+}
+.da-process03 {
+    grid-area: da16;
+}
+.da-process04 {
+    grid-area: da17;
+    margin-left: 2vw;
+    align-self: end;
+}
+.da-grid05 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+        "da18 da18"
+        "da19 da20" 
+}
+.da-result01 {
+    grid-area: da18;
+}
+.da-result02 {
+    grid-area: da19;
+}
+.da-result03 {
+    grid-area: da20;
+    margin-left: 2vw;
+    align-self: end;
+}
+.da-grid06 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+        "da21 da21"
+        "da22 .   " 
+}
+.da-result04 {
+    grid-area: da21;
+}
+.da-result05 {
+    grid-area: da22;
+}
+.da-back {
+    font-family: 'Roboto Mono', sans-serif;
+    font-size: 1em;
+    font-weight: 700;
+    color: #A11515;
+    letter-spacing: 0.2em;
+    margin-left: -35%;
+    margin-bottom: 20px;
+}
+@media (max-width:800px) {
+    .da-grid01 {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas:
+            "da03"
+            "da01"
+            "da04"
+            "da02"
+    }
+    .da-grid02 {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas:
+            "da05"
+            "da07"
+            "da06"
+            "da08"
+    }
+    .da-grid03 {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas:
+            "da13"
+            "da09"
+            "da10"
+            "da11"
+            "da12"
+    }
+    .da-grid04 {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas:
+            "da17"
+            "da14"
+            "da15"
+            "da16"
+    }
+    .da-grid05 {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas:
+            "da20"
+            "da18"
+            "da19"
+    }
+    .da-grid06 {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas:
+            "da21"
+            "da22"
+    }
+    #da-arrow01, #da-arrow02, #da-arrow03, #da-arrow04, #da-arrow05, #da-arrow06 {
+        margin-left: -75%;
+        margin-top: 0px;
+    }
+    .da-back {
+        align-self: flex-start;
+        margin-left: 10px;
+    }
+}
