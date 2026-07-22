@@ -1,45 +1,9 @@
-#tt-arrow01{
-    margin-top: -100px;
-    margin-bottom: 10px;
-    width: 10px;
-    margin-left: -53%;
-    z-index: -10;
-}
-#tt-arrow02{
-    margin-top: -100px;
-    margin-bottom: 10px;
-    width: 10px;
-    margin-left: -18%;
-    z-index: -10;
-}
-#tt-arrow03{
-    margin-top: -100px;
-    margin-bottom: 10px;
-    width: 10px;
-    margin-left: -28%;
-    z-index: -10;
-}
-#tt-arrow04{
-    margin-top: -100px;
-    margin-bottom: 10px;
-    width: 10px;
-    margin-left: -47%;
-    z-index: -10;
-}
-#tt-arrow05{
-    margin-top: -100px;
-    margin-bottom: 10px;
-    width: 10px;
-    margin-left: -40%;
-    z-index: -10;
-}
-#tt-arrow06{
-    margin-top: -100px;
-    margin-bottom: 10px;
-    width: 10px;
-    margin-left: 30%;
-    z-index: -10;
-}
+#tt-arrow01 { margin-left: -53%; }
+#tt-arrow02 { margin-left: -18%; }
+#tt-arrow03 { margin-left: -28%; }
+#tt-arrow04 { margin-left: -47%; }
+#tt-arrow05 { margin-left: -40%; }
+#tt-arrow06 { margin-left: 30%; }
 .tt-grid01 {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
@@ -192,13 +156,7 @@
     grid-area: tt28;
 }
 .tt-back {
-    font-family: 'Roboto Mono', sans-serif;
-    font-size: 1em;
-    font-weight: 700;
-    color: #A11515;
-    letter-spacing: 0.2em;
     margin-left: 30%;
-    margin-bottom: 20px;
 }
 @media (max-width:800px) {
     .tt-grid01 {
@@ -255,10 +213,5 @@
     }
     #tt-arrow01, #tt-arrow02, #tt-arrow03, #tt-arrow04, #tt-arrow05, #tt-arrow06 {
         margin-left: -70%;
-        margin-top: 0px;
-    }
-    .tt-back {
-        align-self: flex-start;
-        margin-left: 10px;
     }
 }

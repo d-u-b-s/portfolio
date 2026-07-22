@@ -1,45 +1,9 @@
-#nc-arrow01{
-    margin-top: -100px;
-    margin-bottom: 10px;
-    width: 10px;
-    margin-left: -42%;
-    z-index: -10;
-}
-#nc-arrow02{
-    margin-top: -100px;
-    margin-bottom: 10px;
-    width: 10px;
-    margin-left: -42%;
-    z-index: -10;
-}
-#nc-arrow03{
-    margin-top: -100px;
-    margin-bottom: 10px;
-    width: 10px;
-    margin-left: -36%;
-    z-index: -10;
-}
-#nc-arrow04{
-    margin-top: -100px;
-    margin-bottom: 10px;
-    width: 10px;
-    margin-left: -47%;
-    z-index: -10;
-}
-#nc-arrow05{
-    margin-top: -100px;
-    margin-bottom: 10px;
-    width: 10px;
-    margin-left: -53%;
-    z-index: -10;
-}
-#nc-arrow06{
-    margin-top: -100px;
-    margin-bottom: 10px;
-    width: 10px;
-    margin-left: 53%;
-    z-index: -10;
-}
+#nc-arrow01 { margin-left: -42%; }
+#nc-arrow02 { margin-left: -42%; }
+#nc-arrow03 { margin-left: -36%; }
+#nc-arrow04 { margin-left: -47%; }
+#nc-arrow05 { margin-left: -53%; }
+#nc-arrow06 { margin-left: 53%; }
 .nc-grid01 {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
@@ -174,13 +138,7 @@
     grid-area: nc29;
 }
 .nc-back {
-    font-family: 'Roboto Mono', sans-serif;
-    font-size: 1em;
-    font-weight: 700;
-    color: #A11515;
-    letter-spacing: 0.2em;
     margin-left: 53%;
-    margin-bottom: 20px;
 }
 @media (max-width:800px) {
     .nc-grid01 {
@@ -236,10 +194,5 @@
     }
     #nc-arrow01, #nc-arrow02, #nc-arrow03, #nc-arrow04, #nc-arrow05, #nc-arrow06 {
         margin-left: -75%;
-        margin-top: 0px;
-    }
-    .nc-back {
-        align-self: flex-start;
-        margin-left: 10px;
     }
 }

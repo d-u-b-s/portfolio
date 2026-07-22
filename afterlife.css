@@ -1,45 +1,5 @@
-#da-arrow01{
-    margin-top: -100px;
-    margin-bottom: 10px;
-    width: 10px;
-    margin-left: -35%;
-    z-index: -10;
-}
-#da-arrow02{
-    margin-top: -100px;
-    margin-bottom: 10px;
-    width: 10px;
-    margin-left: -48%;
-    z-index: -10;
-}
-#da-arrow03{
-    margin-top: -100px;
-    margin-bottom: 10px;
-    width: 10px;
-    margin-left: -48%;
-    z-index: -10;
-}
-#da-arrow04{
-    margin-top: -100px;
-    margin-bottom: 10px;
-    width: 10px;
-    margin-left: -35%;
-    z-index: -10;
-}
-#da-arrow05{
-    margin-top: -100px;
-    margin-bottom: 10px;
-    width: 10px;
-    margin-left: -35%;
-    z-index: -10;
-}
-#da-arrow06{
-    margin-top: -100px;
-    margin-bottom: 10px;
-    width: 10px;
-    margin-left: -35%;
-    z-index: -10;
-}
+#da-arrow01, #da-arrow04, #da-arrow05, #da-arrow06 { margin-left: -35%; }
+#da-arrow02, #da-arrow03 { margin-left: -48%; }
 .da-grid01 {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
@@ -84,14 +44,6 @@
     margin-left: 2vw;
     align-self: end;
 }
-/* .da-grid03 {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-areas:
-        "da09 da09 .    .   "
-        "da09 da09 da10 da11"
-        "da12 da12 da10 da11"
-        "da12 da12 da13 da13"
-} */
 .da-grid03 {
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
@@ -168,13 +120,7 @@
     grid-area: da22;
 }
 .da-back {
-    font-family: 'Roboto Mono', sans-serif;
-    font-size: 1em;
-    font-weight: 700;
-    color: #A11515;
-    letter-spacing: 0.2em;
     margin-left: -35%;
-    margin-bottom: 20px;
 }
 @media (max-width:800px) {
     .da-grid01 {
@@ -225,10 +171,5 @@
     }
     #da-arrow01, #da-arrow02, #da-arrow03, #da-arrow04, #da-arrow05, #da-arrow06 {
         margin-left: -75%;
-        margin-top: 0px;
-    }
-    .da-back {
-        align-self: flex-start;
-        margin-left: 10px;
     }
 }

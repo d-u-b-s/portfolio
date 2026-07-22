@@ -1,44 +1,7 @@
-#es-arrow01{
-    margin-top: -100px;
-    margin-bottom: 10px;
-    width: 10px;
-    margin-left: -34%;
-    z-index: -10;
-}
-#es-arrow02{
-    margin-top: -100px;
-    margin-bottom: 10px;
-    width: 10px;
-    margin-left: -28%;
-    z-index: -10;
-}
-#es-arrow03{
-    margin-top: -100px;
-    margin-bottom: 10px;
-    width: 10px;
-    margin-left: -28%;
-    z-index: -10;
-}
-#es-arrow04{
-    margin-top: -100px;
-    margin-bottom: 10px;
-    width: 10px;
-    margin-left: -46%;
-    z-index: -10;
-}
-#es-arrow05{
-    margin-top: -100px;
-    margin-bottom: 10px;
-    width: 10px;
-    margin-left: -47%;
-    z-index: -10;
-}
-#es-arrow06{
-    margin-top: -100px;
-    margin-bottom: 10px;
-    width: 10px;
-    z-index: -10;
-}
+#es-arrow01 { margin-left: -34%; }
+#es-arrow02, #es-arrow03 { margin-left: -28%; }
+#es-arrow04 { margin-left: -46%; }
+#es-arrow05 { margin-left: -47%; }
 .es-grid01 {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
@@ -131,14 +94,6 @@
     grid-area: es16;
     margin-left: 2vw;
 }
-.es-back {
-    font-family: 'Roboto Mono', sans-serif;
-    font-size: 1em;
-    font-weight: 700;
-    color: #A11515;
-    letter-spacing: 0.2em;
-    margin-bottom: 20px;
-}
 @media (max-width:800px) {
     .es-grid01 {
         grid-template-columns: repeat(1, 1fr);
@@ -182,19 +137,7 @@
             "es14"
             "es15"
     }
-    .es-grid06 {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas:
-            "es23 es28"
-            "es24 es27"
-            "es25 es26"
-    }
     #es-arrow01, #es-arrow02, #es-arrow03, #es-arrow04, #es-arrow05, #es-arrow06 {
         margin-left: -75%;
-        margin-top: 0px;
     }
-    .es-back {
-        align-self: flex-start;
-        margin-left: 10px;
-    }
-}   
+}

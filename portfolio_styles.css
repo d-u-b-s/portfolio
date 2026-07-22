@@ -22,8 +22,7 @@
 }
 html {
     scroll-behavior: smooth;
-    /* scrollbar-width: thin; */
-    scrollbar-color: none #A11515;
+    scrollbar-color: #A11515 transparent;
   }
 html::-webkit-scrollbar {
     width: 10px;
@@ -33,22 +32,12 @@ html::-webkit-scrollbar-thumb {
     background-color: #A11515;
 }
 html::-webkit-scrollbar-track {
-    /* background-color: none; */
     -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0);
     background-color: transparent;
 }
 body {
     background-color: rgb(222, 222, 222);
     overflow: overlay;
-}
-.wrapper {
-    height: 100vh;
-    overflow-y: auto;
-    overflow-x: hidden;
-    perspective: 10px;
-}
-.para {
-    transform: translateZ(-2px) scale(1.1);
 }
 .project-wrapper{
     display: flex;
@@ -116,15 +105,6 @@ p {
     margin-bottom: 10px;
 }
 
-.nav-item02 {
-    font-family: 'Roboto Mono', sans-serif;
-    font-size: 1em;
-    font-weight: 700;
-    color: #A11515;
-    letter-spacing: 0.2em;
-    margin-left: 5vw;
-    margin-bottom: 500px;
-}
 .nav-item03 {
     font-family: 'Roboto Mono', sans-serif;
     font-size: 1em;
@@ -146,13 +126,6 @@ p {
     flex-direction: column;
     justify-content: center;
 }
-.flex-row {
-    display: flex;
-}
-.about-flex {
-    display: flex;
-    margin-top: 300px;
-}
 .arrow01 {
     margin-top: 5px;
     margin-bottom: 10px;
@@ -169,6 +142,20 @@ p {
     margin-bottom: 10px;
     width: 62px;
     margin-left: 5vw;
+}
+.project-arrow {
+    margin-top: -100px;
+    margin-bottom: 10px;
+    width: 10px;
+    z-index: -10;
+}
+.project-back {
+    font-family: 'Roboto Mono', sans-serif;
+    font-size: 1em;
+    font-weight: 700;
+    color: #A11515;
+    letter-spacing: 0.2em;
+    margin-bottom: 20px;
 }
 
 .link {
@@ -239,12 +226,15 @@ p {
     transition: 0.5s;
 }
 .clickable {
-    transition: all 0.2s ease-in-out;
+    transition: transform 0.45s cubic-bezier(0.2, 0.6, 0.2, 1), box-shadow 0.45s ease, outline-color 0.3s ease;
+    outline: 2px solid rgba(161, 21, 21, 0);
+    outline-offset: -2px;
     cursor: pointer;
 }
 .clickable:hover {
-    padding: 2px;
-    background-color: #A11515;
+    transform: translateY(-4px);
+    box-shadow: 0px 14px 30px rgba(0, 0, 0, 0.22);
+    outline-color: #A11515;
 }
 .blurb {
     text-align: left;
@@ -258,13 +248,6 @@ p {
 .divider02 {
     height: 200px;
 }
-.textbox01 {
-    margin-left: 10vw;
-    margin-right: 10vw;
-    max-width: 350px;
-    display: inline-block;
-    align-self: flex-end;
-}
 .textbox02 {
     display: flexbox;
     flex-direction: column;
@@ -273,16 +256,6 @@ p {
 }
 .bold {
     font-weight: 700;
-}
-.header-img01 {
-    margin-left: 20vw;
-    margin-right: 3vw;
-    margin-bottom: 10px;
-    max-width: 500px;
-    position: relative;
-}
-.center-wrapper {
-    margin: auto;
 }
 img {
     max-width: 100%;
@@ -342,5 +315,293 @@ img {
     }
     .modalImg {
       max-width: 100%;
+    }
+    .project-arrow {
+        margin-top: 0px;
+    }
+    .project-back {
+        align-self: flex-start;
+        margin-left: 10px;
+    }
+}
+
+/* ============================================================
+   Modern layer: preloader, transitions, cursor, reveals, grain
+   ============================================================ */
+:root {
+    --red: #A11515;
+    --bg: rgb(222, 222, 222);
+    --ink: rgb(80, 80, 80);
+}
+::selection {
+    background-color: var(--red);
+    color: var(--bg);
+}
+.no-scroll {
+    overflow: hidden;
+}
+
+/* ---------- preloader ---------- */
+.preloader {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    background-color: var(--bg);
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.65s cubic-bezier(0.76, 0, 0.24, 1);
+}
+.preloader-name {
+    font-family: 'Roboto Mono', monospace;
+    color: var(--red);
+    font-size: clamp(1.3rem, 4vw, 2.4rem);
+    font-weight: 700;
+    letter-spacing: 0.5em;
+    display: flex;
+    overflow: hidden;
+}
+.preloader-name span {
+    display: inline-block;
+    min-width: 0.62em;
+    transform: translateY(120%);
+    animation: pre-rise 0.6s cubic-bezier(0.2, 0.6, 0.2, 1) forwards;
+    animation-delay: calc(var(--i) * 50ms);
+}
+@keyframes pre-rise {
+    to { transform: translateY(0); }
+}
+.preloader-bar {
+    width: min(280px, 60vw);
+    height: 2px;
+    background-color: rgba(161, 21, 21, 0.15);
+    overflow: hidden;
+}
+.preloader-bar span {
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: var(--red);
+    transform: translateX(-101%);
+    animation: pre-load 1.2s cubic-bezier(0.65, 0, 0.35, 1) forwards 0.25s;
+}
+@keyframes pre-load {
+    to { transform: translateX(0); }
+}
+.preloader.quick {
+    background-color: var(--red);
+}
+.preloader.done {
+    transform: translateY(-100%);
+    pointer-events: none;
+}
+
+/* ---------- page transition wipe ---------- */
+.page-transition {
+    position: fixed;
+    inset: 0;
+    z-index: 999;
+    background-color: var(--red);
+    transform: translateY(101%);
+    transition: transform 0.4s cubic-bezier(0.76, 0, 0.24, 1);
+    pointer-events: none;
+}
+.page-transition.active {
+    transform: translateY(0);
+}
+
+/* ---------- scroll progress ---------- */
+.scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: var(--red);
+    transform-origin: 0 50%;
+    transform: scaleX(0);
+    z-index: 996;
+    pointer-events: none;
+}
+
+/* ---------- grain overlay ---------- */
+.grain {
+    position: fixed;
+    inset: -100%;
+    z-index: 995;
+    pointer-events: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    opacity: 0.05;
+    animation: grain-shift 9s steps(10) infinite;
+}
+@keyframes grain-shift {
+    0% { transform: translate(0, 0); }
+    10% { transform: translate(-2%, -3%); }
+    20% { transform: translate(3%, 1%); }
+    30% { transform: translate(-1%, 3%); }
+    40% { transform: translate(2%, -2%); }
+    50% { transform: translate(-3%, 1%); }
+    60% { transform: translate(1%, 2%); }
+    70% { transform: translate(3%, -1%); }
+    80% { transform: translate(-2%, 2%); }
+    90% { transform: translate(2%, 3%); }
+    100% { transform: translate(0, 0); }
+}
+
+/* ---------- scroll reveals ---------- */
+.js .reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.7s ease, transform 0.7s cubic-bezier(0.2, 0.6, 0.2, 1);
+    transition-delay: var(--d, 0ms);
+    will-change: opacity, transform;
+}
+.js .reveal.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ---------- split-name letters ---------- */
+.split-name .letter {
+    display: inline-block;
+    transition: font-variation-settings 0.3s ease, transform 0.3s ease;
+}
+.split-name .letter:hover {
+    font-variation-settings: 'wght' 900;
+    transform: translateY(-0.08em);
+}
+.js .split-name .letter {
+    opacity: 0;
+    transform: translateY(0.4em);
+}
+.js .split-name.name-in .letter {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.55s ease, transform 0.55s cubic-bezier(0.2, 0.6, 0.2, 1), font-variation-settings 0.3s ease;
+    transition-delay: calc(var(--i) * 45ms);
+}
+.js .split-name.name-done .letter {
+    transition-delay: 0ms;
+}
+
+/* ---------- custom cursor ---------- */
+@media (pointer: fine) {
+    .has-cursor,
+    .has-cursor * {
+        cursor: none !important;
+    }
+    .cursor-dot,
+    .cursor-ring {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1001;
+        pointer-events: none;
+        border-radius: 50%;
+        transition: opacity 0.3s ease;
+    }
+    .cursor-dot {
+        width: 8px;
+        height: 8px;
+        margin: -4px 0 0 -4px;
+        background-color: var(--red);
+    }
+    .cursor-ring {
+        width: 34px;
+        height: 34px;
+        margin: -17px 0 0 -17px;
+        border: 1.5px solid var(--red);
+        opacity: 0.5;
+        transition: width 0.25s ease, height 0.25s ease, margin 0.25s ease,
+            background-color 0.25s ease, opacity 0.3s ease;
+    }
+    .cursor-ring.is-active {
+        width: 52px;
+        height: 52px;
+        margin: -26px 0 0 -26px;
+        background-color: rgba(161, 21, 21, 0.08);
+        opacity: 1;
+    }
+    .cursor-hidden .cursor-dot,
+    .cursor-hidden .cursor-ring {
+        opacity: 0;
+    }
+}
+
+/* ---------- marquee ---------- */
+.marquee {
+    overflow: hidden;
+    border-top: 2px solid var(--red);
+    border-bottom: 2px solid var(--red);
+    padding: 16px 0;
+    margin-bottom: 120px;
+}
+.marquee-track {
+    display: flex;
+    width: max-content;
+    animation: marquee-scroll 30s linear infinite;
+}
+.marquee:hover .marquee-track {
+    animation-play-state: paused;
+}
+.marquee-track span {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    font-size: 1.1em;
+    color: var(--red);
+    letter-spacing: 0.35em;
+    white-space: nowrap;
+}
+@keyframes marquee-scroll {
+    to { transform: translateX(-50%); }
+}
+
+/* ---------- lightbox polish ---------- */
+.modal {
+    background-color: rgba(20, 20, 20, 0.82);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+}
+.modal .modalImg {
+    transform: scale(0.94);
+    transition: transform 0.4s cubic-bezier(0.2, 0.6, 0.2, 1);
+}
+.modal.appear .modalImg {
+    transform: scale(1);
+}
+
+/* ---------- index card hover ties image + label together ---------- */
+.index-panel:hover .nav-item01.underline::after {
+    width: 100%;
+    background-color: var(--red);
+}
+
+/* ---------- reduced motion ---------- */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    .js .reveal {
+        opacity: 1;
+        transform: none;
+    }
+    .js .split-name .letter {
+        opacity: 1;
+        transform: none;
+    }
+    .marquee-track {
+        animation: none;
+    }
+    .grain {
+        animation: none;
     }
 }

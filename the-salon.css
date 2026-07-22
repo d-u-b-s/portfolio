@@ -1,42 +1,5 @@
-#ts-arrow01{
-    margin-top: -100px;
-    margin-bottom: 10px;
-    width: 10px;
-    margin-left: -35%;
-    z-index: -10;
-}
-#ts-arrow02{
-    margin-top: -100px;
-    margin-bottom: 10px;
-    width: 10px;
-    margin-left: -28%;
-    z-index: -10;
-}
-#ts-arrow03{
-    margin-top: -100px;
-    width: 10px;
-    margin-left: -28%;
-    z-index: -10;
-}
-#ts-arrow04{
-    margin-top: -100px;
-    width: 10px;
-    margin-left: -35%;
-    z-index: -10;
-}
-#ts-arrow05{
-    margin-top: -100px;
-    width: 10px;
-    margin-left: -28%;
-    z-index: -10;
-}
-#ts-arrow06{
-    margin-top: -100px;
-    margin-bottom: 10px;
-    width: 10px;
-    margin-left: 0%;
-    z-index: -10;
-}
+#ts-arrow01, #ts-arrow04 { margin-left: -35%; }
+#ts-arrow02, #ts-arrow03, #ts-arrow05 { margin-left: -28%; }
 .ts-grid01 {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
@@ -130,14 +93,6 @@
     align-self: flex-end;
     margin-left: 2vw;
 }
-.ts-back {
-    font-family: 'Roboto Mono', sans-serif;
-    font-size: 1em;
-    font-weight: 700;
-    color: #A11515;
-    letter-spacing: 0.2em;
-    margin-bottom: 20px;
-}
 @media (max-width:800px) {
     .ts-grid01 {
         grid-template-columns: repeat(1, 1fr);
@@ -162,14 +117,6 @@
             "ts10"
             "ts08"
     }
-    .ts-grid03 {
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-areas:
-            "ts11"
-            "ts09"
-            "ts10"
-            "ts08"
-    }
     .ts-grid04 {
         grid-template-columns: repeat(1, 1fr);
         grid-template-areas:
@@ -185,9 +132,5 @@
     }
     #ts-arrow01, #ts-arrow02, #ts-arrow03, #ts-arrow04, #ts-arrow05, #ts-arrow06 {
         margin-left: -75%;
-    }
-    .ts-back {
-        align-self: flex-start;
-        margin-left: 10px;
     }
 }

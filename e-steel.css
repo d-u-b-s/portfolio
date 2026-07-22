@@ -1,45 +1,9 @@
-#st-arrow01{
-    margin-top: -100px;
-    margin-bottom: 10px;
-    width: 10px;
-    margin-left: -34%;
-    z-index: -10;
-}
-#st-arrow02{
-    margin-top: -100px;
-    margin-bottom: 10px;
-    width: 10px;
-    margin-left: -47%;
-    z-index: -10;
-}
-#st-arrow03{
-    margin-top: -100px;
-    margin-bottom: 10px;
-    width: 10px;
-    margin-left: -63%;
-    z-index: -10;
-}
-#st-arrow04{
-    margin-top: -100px;
-    margin-bottom: 10px;
-    width: 10px;
-    margin-left: -56%;
-    z-index: -10;
-}
-#st-arrow05{
-    margin-top: -100px;
-    margin-bottom: 10px;
-    width: 10px;
-    margin-left: -47%;
-    z-index: -10;
-}
-#st-arrow06{
-    margin-top: -100px;
-    margin-bottom: 10px;
-    width: 10px;
-    z-index: -10;
-    margin-left: 35%;
-}
+#st-arrow01 { margin-left: -34%; }
+#st-arrow02 { margin-left: -47%; }
+#st-arrow03 { margin-left: -63%; }
+#st-arrow04 { margin-left: -56%; }
+#st-arrow05 { margin-left: -47%; }
+#st-arrow06 { margin-left: 35%; }
 .st-grid01 {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
@@ -191,13 +155,7 @@
     grid-area: st24;
 }
 .st-back {
-    font-family: 'Roboto Mono', sans-serif;
-    font-size: 1em;
-    font-weight: 700;
-    color: #A11515;
-    letter-spacing: 0.2em;
     margin-left: 35%;
-    margin-bottom: 20px;
 }
 @media (max-width:800px) {
     .st-ideation03 {
@@ -267,10 +225,5 @@
     }
     #st-arrow01, #st-arrow02, #st-arrow03, #st-arrow04, #st-arrow05, #st-arrow06 {
         margin-left: -75%;
-        margin-top: 0px;
     }
-    .st-back {
-        align-self: flex-start;
-        margin-left: 10px;
-    }
-}   
+}
