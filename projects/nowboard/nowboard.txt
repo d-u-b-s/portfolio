@@ -1,0 +1,14 @@
+Challenge
+The main goal was to raise the rate at which users resolve their issues through the AI chatbot instead of escalating to a human technician. This meant redesigning the platform for more clarity and concision, while staying loosely aligned with the existing visual identity.
+
+Research
+I spoke with the different people involved in the product, from end clients to the human IT technicians who handle escalated issues. I benchmarked other IT chatbot services, looking at UX, conversation tone, and chatbot functionality. I also ran a full design audit of the existing Nowboard platform.
+
+Ideation
+I worked closely with the dev team to define what improvements were realistic to build and integrate. Together we mapped out the conversation and design flows for the new version. I then I then used AI tools to iterate on the final aesthetic of the platform.
+
+Creation
+I built a new, more contemporary design system for the platform. I Using Figma's AI tools, I redesigned the entire dashboard experience around this new system, complete with a spec for developers and AI agents.
+
+Result
+The result was a fully refurbished IT dashboard with a new UX and CX. In early testing, the redesign more than doubled the AI assisted resolution rate.
