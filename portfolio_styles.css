@@ -313,6 +313,10 @@ img {
     .side-menu{
         display: none;
     }
+    .name02 {
+        font-size: 2em;
+        margin-left: 10px;
+    }
     .modalImg {
       max-width: 100%;
     }
