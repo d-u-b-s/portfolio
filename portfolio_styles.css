@@ -314,7 +314,7 @@ img {
         display: none;
     }
     .name02 {
-        font-size: 2em;
+        font-size: 1.6em;
         margin-left: 10px;
     }
     .modalImg {
@@ -544,22 +544,43 @@ img {
 }
 .marquee-track {
     display: flex;
+    align-items: center;
     width: max-content;
-    animation: marquee-scroll 40s linear infinite;
+    animation: marquee-scroll 30s linear infinite;
 }
 .marquee:hover .marquee-track {
     animation-play-state: paused;
 }
-.marquee-track span {
+.marquee-group {
+    display: flex;
+    align-items: center;
+    flex: none;
+}
+/* --s is a per-logo optical scale set inline in the markup: the wordmarks
+   are matched on how large they read, not on their raw bounding boxes. */
+.marquee-track img {
+    height: calc(42px * var(--s, 1));
+    width: auto;
+    max-width: none;
+    margin: 0 32px;
+    box-shadow: none;
+    flex: none;
+}
+.marquee-dot {
     font-family: 'Roboto Mono', monospace;
     font-weight: 700;
-    font-size: 1.1em;
+    font-size: 0.9em;
+    line-height: 1;
     color: var(--red);
-    letter-spacing: 0.35em;
-    white-space: nowrap;
 }
 @keyframes marquee-scroll {
     to { transform: translateX(-50%); }
+}
+@media only screen and (max-width: 800px){
+    .marquee-track img {
+        height: calc(30px * var(--s, 1));
+        margin: 0 20px;
+    }
 }
 
 /* ---------- lightbox polish ---------- */
